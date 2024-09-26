@@ -1,27 +1,40 @@
-html{
+/*  
+    Home.css
+    Mauli Gandhi
+    301486344
+    2024-09-26
+*/    
+/* Base HTML styles */
+html {
     margin-left: auto;
     margin-right: auto;
-    
-}
-#intro {
-height: calc(100vh -4em);
-width: 100vw;
-max-width: 75em;
-margin: 0 auto;
-overflow: hidden;
-position: relative;
-font-size:x-large;
+    /* Ensures the content is centered on the page */
 }
 
-.bg{
-    position:absolute;
+/* Styling for the introduction section */
+#intro {
+    height: calc(100vh - 4em);
+    width: 100vw;
+    max-width: 75em;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    font-size: x-large;
+    /* Adapt font size for high readability across devices */
+}
+
+/* Background image styling, if applicable */
+.bg {
+    position: absolute;
     top: -4em;
     right: 0;
     z-index: -1;
     object-fit: cover;
     height: 100vh;
+    /* Covers the full vertical height of the viewport */
 }
 
+/* Main content styling within the introduction */
 .introContent {
     height: 100vh;
     width: 100vw;
@@ -31,26 +44,56 @@ font-size:x-large;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* Centers content vertically and horizontally in a flexible container */
 }
 
-.hello {
+/* Styling for the initial greeting */
+.helloText {
     font-size: 1.75rem;
-    font-weight:100;
+    font-weight: 100;
+    /* Lighter font weight for a modern aesthetic */
 }
 
+/* Styling for the name highlight */
 .introName {
-    color: yellow;
+    color: yellow; /* Ensure visibility and accessibility */
 }
 
-.introPara {
+/* Paragraph styling for detailed descriptions */
+.introParagraph {
     font-size: medium;
     font-weight: 100;
+    /* Medium font size for readability */
 }
 
-.btn {
+/* Button styling */
+.hireButton {
     background: white;
     margin: 1rem 0;
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 2rem;
+    cursor: pointer;
+    /* Rounded corners for a modern button appearance */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    /* Adjustments for tablet and mobile sizes */
+    #intro {
+        font-size: large; /* Smaller font size for smaller screens */
+    }
+
+    .introContent {
+        font-size: 2em; /* Reducing font size in the main content for readability on small devices */
+        padding: 1em; /* Smaller padding to utilize space more efficiently */
+    }
+
+    .helloText {
+        font-size: 1.5rem; /* Slightly smaller to fit compact screens */
+    }
+
+    .hireButton {
+        padding: 0.5rem 1rem; /* Smaller button for smaller screens */
+    }
 }

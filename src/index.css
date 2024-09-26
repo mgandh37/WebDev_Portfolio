@@ -67,10 +67,48 @@ button:focus-visible {
   }
 }
 
+/* Navigation Bar Styling */
 nav {
-float:right;
-font-size:x-large;
+  display: flex;
+  justify-content: flex-end; /* Aligns navigation items to the right */
+  align-items: center; /* Centers items vertically within the nav */
+  padding: 0 20px; /* Adds horizontal padding for spacing at the edges */
+  background-color: #f8f8f8; /* Light background for the navbar */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  font-size: 1rem; /* Responsive font size */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern, readable font */
+}
 
+/* Navigation Links Styling */
+nav a {
+  text-decoration: none; /* Removes underline from links */
+  color: #333; /* Dark color for better readability */
+  padding: 10px 15px; /* Padding around the links for easier clickability */
+  margin: 0 5px; /* Spacing between links */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover and Focus Styles for Links */
+nav a:hover, nav a:focus {
+  background-color: #4CAF50; /* Green background on hover */
+  color: white; /* White text on hover for contrast */
+  border-radius: 5px; /* Rounded corners for the hover effect */
+}
+/* Responsive Adjustments for smaller screens */
+
+
+/* Responsive Adjustments for smaller screens */
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column; /* Stack nav items vertically on small screens */
+      padding: 10px; /* Reduce padding in smaller screens */
+  }
+
+  nav a {
+      display: block; /* Makes each link full width of the nav */
+      text-align: center; /* Centers text within each link */
+      margin-bottom: 5px; /* Adds a bottom margin for spacing between links */
+  }
 }
 
 

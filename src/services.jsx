@@ -11,14 +11,17 @@ import '../src/index.css'
 export default function Services() {
     return (
       <>
+      {/* Section for Services */}
       <section id="services">
       <div className="servicesSection">
+          {/* Adding 2 cards */}
+          {/* QA Service Card */}
             <div className="serviceCard">
                 <img src={qaTestingImg} alt="QA Testing" className="serviceImage" />
                 <h3>QA Testing</h3>
                 <p>Expert in conducting thorough QA testing to ensure software reliability, functionality, and compliance with all standards.</p>
             </div>
-
+          {/* Dev Card */}
             <div className="serviceCard">
                 <img src={softwareDevelopmentImg} alt="Software Development" className="serviceImage" />
                 <h3>Software Development</h3>
