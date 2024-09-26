@@ -5,7 +5,7 @@
     2024-09-24
 */
 import { Link } from 'react-router-dom';
-import '../src/assets/logo.css';
+import '../src/logo.css';
 export default function Layout() {
  return (
  <>
