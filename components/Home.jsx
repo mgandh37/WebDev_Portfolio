@@ -1,3 +1,9 @@
+/*  
+    Home.jsx
+    Mauli Gandhi
+    301486344
+    2024-09-24
+*/
 import { Link } from 'react-router-dom';
 import '../src/index.css'
 

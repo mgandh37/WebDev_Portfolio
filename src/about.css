@@ -1,53 +1,110 @@
-#skill {
-    overflow: hidden;
-    width: 100vw;
-    max-width: 65rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align:center;
-    margin: 0 auto;
+/*  
+    About css 
+    Mauli Gandhi
+    301486344
+    2024-09-24
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-.skillTitle{
-    margin: 1rem 0;
-    font-size: 3rem;
-    font-weight: 600;
-    padding-top: 3rem;
-    margin-bottom: 1.5rem;
+/* Section styling for a consistent look */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.skillDesc{
-    font-weight: 400;
-    font-size:xx-large;
-    max-width: 51rem;
-    padding: 0 2rem;
+/* Profile section */
+.profile {
+    text-align: center;
+    padding: 20px;
 }
 
-.skillBars{
-    margin: 1.5rem;
-    width: 100vw;
-    max-width: 80%;
-    text-align: left;
+/* Profile Image */
+.profileImg {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-.skillBar{
-    display: flex;
-    margin: 1rem;
-    padding: 1.5rem 2rem;
-    border-radius: 0.5rem;
-    background: grey;
+/* Heading within sections */
+h1, h2 {
+    color: #4CAF50;
 }
 
-.skillBarImg{
-    object-fit: cover;
-    height: 6rem;
-    width: 10rem;
-    margin-right: 2rem;
+/* Skills, experience, projects and education sections */
+.skills, .experience, .projects, .education, .contact {
+    padding: 20px;
+}
+.skills h2, .experience h2, .projects h2, .education h2, .contact h2 {
+    margin-bottom: 15px; /* Space between heading and paragraph */
+    color: #4CAF50; /* Styling heading color */
+    font-size: 20px; /* Larger font size for headings */
 }
 
-.skillBarText>p{
-    font-size:1.5rem;
-    font-weight: 700;
+/* Paragraphs within these sections */
+.skills p, .experience p, .projects p, .education p, .contact p {
+    text-align: justify; /* Ensures alignment with parent containers */
+    font-size: 16px; /* Smaller than the heading */
+    color: #666; /* Slightly lighter text color for better hierarchy */
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Last paragraph in each section shouldn't have bottom margin */
+.skills p:last-child, .experience p:last-child, .projects p:last-child, .education p:last-child {
+    margin-bottom: 0;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
+
+/* Job and project individual items */
+.job, .project {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.job:last-child, .project:last-child {
+    border-bottom: none;
+}
+
+/* Paragraphs for descriptions */
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* Button css to download Resume */
+
+.resumeDownload {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+  
+}
+
+.resumeDownload:hover {
+    background-color: #11ab18; /* Change background color on hover */
+    color: white; /* Ensure the text remains white on hover */
 }
