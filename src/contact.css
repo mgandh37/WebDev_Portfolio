@@ -55,6 +55,22 @@
     cursor: pointer;
     float: right;
 }
+.linkedinLink {
+    display: flex;
+    align-items: center;
+    color: #0077b5; /* LinkedIn blue */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.linkedinLink:hover .linkedinIcon {
+    color: #005582; /* Darker LinkedIn blue on hover */
+}
+
+.linkedinIcon {
+    margin-right: 8px;
+    font-size: 24px;
+}
 
 @media (max-width: 768px) {
     .contactSection {

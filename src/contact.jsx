@@ -11,6 +11,7 @@
 import '../src/contact.css'
 import '../src/index.css'
 import { Link } from 'react-router-dom';
+import { FaLinkedin } from "react-icons/fa"; // Import LinkedIn icon
 export default function Contact() {
      return (
      <>
@@ -20,6 +21,11 @@ export default function Contact() {
                 <h2>Contact Info</h2>
                 <p>Email: mauli.gandhi@gmail.com</p>
                 <p>Phone: +647-528-8935</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/mg1989/" target="_blank" rel="noopener noreferrer" className="linkedinLink">
+                    <FaLinkedin className="linkedinIcon" /> LinkedIn
+              </a>
+            </p>
             </div>
             <form className="contactForm">
                 <h2>Send a Message</h2>
