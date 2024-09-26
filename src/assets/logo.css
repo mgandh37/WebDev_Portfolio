@@ -1,0 +1,13 @@
+.logo {
+    width: 100px; /* Size of the logo */
+    height: 100px; /* Size of the logo */
+    background-color: #e26c0a; /* Background color of the logo */
+    border-radius: 50%; /* Makes the square into a circle */
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+    color: rgb(15, 15, 15); /* Color of the text */
+    font-family: Arial, sans-serif; /* Font of the text */
+    font-size: 24px; /* Size of the text */
+    font-weight: bold; /* Make the text bold */
+  }
