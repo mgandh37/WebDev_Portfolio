@@ -1,3 +1,8 @@
+/*  services.jsx 
+    Mauli Gandhi
+    301486344
+    2024-09-24
+*/
 import qaTestingImg from '../src/assets/accessiblity.jpg';  // Path to an image that represents QA Testing
 import softwareDevelopmentImg from '../src/assets/dev.jpg';  // Path to an image for Software Development
 import '../src/services.css';

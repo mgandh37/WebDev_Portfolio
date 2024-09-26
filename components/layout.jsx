@@ -3,6 +3,8 @@
     Mauli Gandhi
     301486344
     2024-09-24
+
+    This file is the main navbar for my site
 */
 import { Link } from 'react-router-dom';
 import '../src/logo.css';

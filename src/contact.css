@@ -1,30 +1,69 @@
-#ffp{
- 
+/*  
+    contact.css
+    Mauli Gandhi
+    301486344
+    2024-09-26
 
-
-    
-    max-width: 50rem;
+    Here I want to create 2 cards side by side
+    First card contain my contat information
+    Second card has a form to submit your inquiry
+*/
+.contactSection {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    
-   
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 20px;
 }
 
-label{
-    font-size:xx-large;
+.contactInfo {
+    width: 30%;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-input{
-    font-size: larger;
+.contactForm {
+    width: 65%;
+    padding: 20px;
+    padding-right: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.submit{
-    font-size:x-large;
+.contactForm h2 {
+    margin-bottom: 20px;
 }
 
-p,a{
-    font-size:x-large;
-    text-align: center;
+.contactForm input, .contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.contactForm button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+@media (max-width: 768px) {
+    .contactSection {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contactInfo, .contactForm {
+        width: 100%;
+        margin-right: 0;
+    }
 }
