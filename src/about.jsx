@@ -32,11 +32,11 @@ export default function About() {
           <div className="experience">
                <h2>Work Experience</h2>
                <div className="job">
-                    <h3>Accessibility Test Specialist - BMO Bank, Toronto [Oct 2022 â€“ Present]</h3>
+                    <h3>Accessibility Test Specialist - BMO Bank, Toronto [Oct 2022 - Present]</h3>
                     <p>Performed rigorous accessibility testing across multiple platforms, ensuring compliance with WCAG 2.0/2.1 guidelines and improving web accessibility for all users.</p>
                </div>
                <div className="job">
-                    <h3>QA Analyst - CIBC Bank, Toronto [May 2021 â€“ Oct 2022]</h3>
+                    <h3>QA Analyst - CIBC Bank, Toronto [May 2021 - Oct 2022]</h3>
                     <p>Lead tester on multiple projects, ensuring the quality of web and mobile applications through comprehensive testing strategies.</p>
                </div>
           </div>
